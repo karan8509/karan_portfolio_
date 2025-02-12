@@ -3,33 +3,33 @@ import React from "react";
 const services = [
   {
     id: 1,
-    title: "Web Design",
-    description: "Creating visually appealing and user-friendly web designs.",
+    title: "🚀 Full-Stack Web Development",
+    description:
+      "I build modern, responsive, and high-performance web applications using React.js and Node.js. From front-end UI to back-end APIs, I handle everything efficiently.",
   },
   {
     id: 2,
-    title: "Frontend Development",
-    description: "Building responsive and interactive user interfaces.",
+    title: "🎨 Frontend Development",
+    description:
+      "I create user-friendly and visually appealing interfaces with React.js, HTML, CSS, and JavaScript to ensure a seamless experience.",
   },
   {
     id: 3,
-    title: "Backend Development",
-    description: "Developing robust server-side logic and databases.",
+    title: "🛠 Backend Development",
+    description:
+      "I develop secure and scalable RESTful APIs using Node.js, Express.js, and MongoDB, ensuring smooth data handling and authentication.",
   },
   {
     id: 4,
-    title: "Full-Stack Development",
-    description: "Combining both frontend and backend development skills.",
+    title: "🔐 Authentication & Security",
+    description:
+      "I implement JWT-based authentication, role-based access control, and data encryption to enhance security in web applications.",
   },
   {
     id: 5,
-    title: "Content Writing",
-    description: "Writing content for your business and companies.",
-  },
-  {
-    id: 6,
-    title: "Digital Marketing",
-    description: "Promote your business with our digital marketing team.",
+    title: "🛠 Debugging & Optimization",
+    description:
+      "   I troubleshoot and fix errors in web applications, optimizing performance, security, and responsiveness for a better user experience.",
   },
 ];
 const Service = () => {
@@ -50,12 +50,19 @@ const Service = () => {
               >
                 {service.id}
               </div>
-              <h3 className="mt-2 text-2xl font-bold text-transparent bg-clip-text 
-              bg-gradient-to-r from-green-400 to-blue-500">
+              <h3
+                className="mt-2 text-2xl font-bold text-transparent bg-clip-text 
+              bg-gradient-to-r from-green-400 to-blue-500"
+              >
                 {service.title}
               </h3>
               <p className="mt-2 text-gray-300">{service.description}</p>
-              <a href="#" className="mt-4 inline-block text-green-400 hover:text-blue-500">Read More</a>
+              <a
+                href="#"
+                className="mt-4 inline-block text-green-400 hover:text-blue-500"
+              >
+                Read More
+              </a>
             </div>
           ))}
         </div>

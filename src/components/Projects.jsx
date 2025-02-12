@@ -1,47 +1,56 @@
 import React from "react";
-import employeeMSImage from "../assets/employee-ms.png";
-import bookMSImage from "../assets/admin-dashboard.png";
+import project1 from "../assets/project1.png";
+import project2 from "../assets/project2.png";
 
 const projects = [
   {
     id: 1,
-    name: "Employee MS",
+    name: "Inventory CRUD",
     technologies: "MERN Stack",
-    image: employeeMSImage,
-    github: "https://github.com/YouafKhan1",
+    image: project1,
+    github: "https://client-omega-sandy.vercel.app/",
   },
   {
     id: 2,
-    name: "Blog App",
-    technologies: "MERN Stack",
-    image: bookMSImage,
-    github: "https://github.com/YouafKhan1",
-  },
-  {
-    id: 3,
-    name: "Book MS",
-    technologies: "MERN Stack",
-    image: employeeMSImage,
-    github: "https://github.com/YouafKhan1",
+    name: "KnowledgeHub",
+    technologies: "Frontend React JS",
+    image: project2,
+    github: "https://quiz-nr9v7edo0-karans-projects-3df8eba2.vercel.app/",
   },
 ];
 
 const Projects = () => {
   return (
-    <div className="bg-black text-white py-20" id="project">
+    <div className="bg-[#1a1a2e] text-white py-20" id="project">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
-        <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-purple-400">
+          My Projects
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
-            <div key={project.id} className="bg-gray-800 p-6 rounded-lg hover:shadow-lg 
-            transform transition-transform duration-300 hover:scale-105">
-              <img src={project.image} alt={project.name} className="rounded-lg mb-4 
-              w-full h-48 object-cover" />
-              <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
+            <div
+              key={project.id}
+              className="bg-[#222831] p-6 rounded-lg hover:shadow-lg 
+              transform transition-transform duration-300 hover:scale-105 border border-purple-500"
+            >
+              <img
+                src={project.image}
+                alt={project.name}
+                className="rounded-lg mb-4 w-full h-48 object-cover border-2 border-purple-400"
+              />
+              <h3 className="text-2xl font-bold mb-2 text-purple-300">
+                {project.name}
+              </h3>
               <p className="text-gray-400 mb-4">{project.technologies}</p>
-              <a href={project.github} className="inline-block bg-gradient-to-r 
-              from-green-400 to-blue-500 text-white px-4 py-2 rounded-full" target="_blank" 
-              rel="noopener noreferrer">GitHub</a>
+              <a
+                href={project.github}
+                className="bg-gradient-to-r from-purple-400 to-pink-500 text-white
+                transform transition-transform duration-300 hover:scale-105 px-8 py-2 rounded-full"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
             </div>
           ))}
         </div>
