@@ -6,7 +6,10 @@ const Footer = () => {
   const [subscribe, setSubscribe] = useState("");
   const handleSubmit = async () => {
     try {
-      await axios.post("http://localhost:8080/userSubscribe", { subscribe });
+      await axios.post(
+        "https://karan-portfolio-backend.vercel.app/userSubscribe",
+        { subscribe }
+      );
     } catch (error) {
       console.log(error.message);
     }

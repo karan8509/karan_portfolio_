@@ -14,11 +14,14 @@ const Contact = () => {
         alert("YOUR DATA NOT VALIDE");
         return;
       }
-      const response = await axios.post("http://localhost:8080/userSend", {
-        name,
-        email,
-        textarea,
-      });
+      const response = await axios.post(
+        "https://karan-portfolio-backend.vercel.app/userSend",
+        {
+          name,
+          email,
+          textarea,
+        }
+      );
       console.log(await response);
       if (response.status === 200) {
         toast.success("Your Data Sent Successfully");
