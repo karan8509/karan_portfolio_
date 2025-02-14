@@ -7,7 +7,7 @@ const Footer = () => {
   const handleSubmit = async () => {
     try {
       await axios.post(
-        "https://karan-portfolio-backend.vercel.app/userSubscribe",
+        "https://server-portfolio-m8te.vercel.app/userSubscribe",
         { subscribe }
       );
     } catch (error) {

@@ -15,7 +15,7 @@ const Contact = () => {
         return;
       }
       const response = await axios.post(
-        "https://karan-portfolio-backend.vercel.app/userSend",
+        "https://server-portfolio-m8te.vercel.app/userSend",
         {
           name,
           email,
