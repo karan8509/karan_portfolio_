@@ -22,7 +22,6 @@ const Contact = () => {
           textarea,
         }
       );
-      console.log(await response);
       if (response.status === 200) {
         toast.success("Your Data Sent Successfully");
       } else {
