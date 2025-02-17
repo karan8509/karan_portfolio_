@@ -20,7 +20,7 @@ const projects = [
   },
   {
     id: 2,
-    name: "Social media",
+    name: "react-ecommerce",
     technologies: "Frontend React JS",
     image: project3,
     github: "https://social-media-2s7front-end-only.vercel.app/",
