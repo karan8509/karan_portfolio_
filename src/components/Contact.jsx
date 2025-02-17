@@ -15,7 +15,7 @@ const Contact = () => {
         return;
       }
       const response = await axios.post(
-        "http://localhost:8080/userSend",
+        "https://server-portfolio-m8te.vercel.app/userSend",
         {
           name,
           email,
