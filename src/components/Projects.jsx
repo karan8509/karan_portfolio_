@@ -1,6 +1,7 @@
 import React from "react";
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
+import project3 from "../assets/project3.png";
 
 const projects = [
   {
@@ -16,6 +17,13 @@ const projects = [
     technologies: "Frontend React JS",
     image: project2,
     github: "https://quiz-nr9v7edo0-karans-projects-3df8eba2.vercel.app/",
+  },
+  {
+    id: 2,
+    name: "Social media",
+    technologies: "Frontend React JS",
+    image: project3,
+    github: "https://social-media-2s7front-end-only.vercel.app/",
   },
 ];
 
