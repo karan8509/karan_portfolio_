@@ -1,22 +1,21 @@
-import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
-import Service from "./components/Service";
+import { Layout } from "./components/Layout";
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <Hero />
-      <About />
-      <Service />
-      <Projects />
-      <Contact />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Projects />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/context" element={<Contact />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
