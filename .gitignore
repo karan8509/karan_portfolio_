@@ -1,4 +1,4 @@
-# Logs
+# Logs 
 logs
 *.log
 npm-debug.log*
@@ -19,6 +19,6 @@ dist-ssr
 .DS_Store
 *.suo
 *.ntvs*
-*.njsproj
+*.njsproject //
 *.sln
 *.sw?
