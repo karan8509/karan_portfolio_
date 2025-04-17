@@ -26,13 +26,25 @@ const About = () => {
           </p>
 
           <div className="contact-info">
-            <a href="mailto:kj382542@gmail.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="mailto:kj382542@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaEnvelope className="icon" />
-            </a>         
-            <a href="https://github.com/karan8509" target="_blank" rel="noopener noreferrer">
+            </a>
+            <a
+              href="https://github.com/karan8509"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub className="icon" />
             </a>
-            <a href="https://www.linkedin.com/in/karan-kashyap-a1b4a1329" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/in/karan-kashyap-a1b4a1329"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLinkedin className="icon" />
             </a>
           </div>
@@ -48,17 +60,16 @@ const About = () => {
               <p>
                 10th: CSBS <br />
                 12th: NIOS <br />
-                College: <em>Indira Gandhi National Open University</em>
+                College: <em>Indira Gandhi National Open University</em> (2025 -
+                2027)
               </p>
             </div>
           </div>
 
- 
           <div className="resume-btn">
-           <a href="/resume.pdf" download className="btn">
-  Download Resume
-</a>
-
+            <a href="/resume.pdf" download className="btn">
+              Download Resume
+            </a>
           </div>
         </div>
       </div>
