@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
-import "../style/Contact.css"; 
+import "../style/Contact.css";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -12,7 +12,6 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Validation
     if (!name || !email || !textarea) {
       toast.error("Please fill all fields");
       return;
@@ -24,13 +23,14 @@ const Contact = () => {
       return;
     }
 
-    setIsSubmitting(true); // Disable button during submission
+    setIsSubmitting(true);
 
     try {
-      const response = await axios.post(
-        "https://server-portfolio-m8te.vercel.app/userSend",
-        { name, email, textarea }
-      );
+      const response = await axios.post("https://server-portfolio-m8te.vercel.app/userSend", {
+        name,
+        email,
+        message: textarea, // ✅ send correct key
+      });
 
       if (response.status === 200) {
         toast.success("Your Data Sent Successfully");
@@ -41,9 +41,10 @@ const Contact = () => {
         toast.error("Something went wrong");
       }
     } catch (error) {
+      console.error("Error while sending form:", error); // ✅ debug
       toast.error("Failed to send data");
     } finally {
-      setIsSubmitting(false); // Re-enable button after submission
+      setIsSubmitting(false);
     }
   };
 
